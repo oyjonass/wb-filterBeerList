@@ -1,4 +1,4 @@
-# wb-beer by OJO
+# wb-filterBeerList
 
 ## Project setup
 ```
