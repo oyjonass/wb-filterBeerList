@@ -8,6 +8,8 @@ npm install
 ### Compiles and hot-reloads for development
 ```
 npm run serve
+or
+npm run serv --watch
 ```
 
 ### Compiles and minifies for production
