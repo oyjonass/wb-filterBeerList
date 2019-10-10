@@ -6,8 +6,8 @@ Template Name: Beers
  
 ?>
 <?php get_header(); ?>
-  <link href=/js/app.50bef84d.js rel=preload as=script>
-  <link href=/js/chunk-vendors.4d43d6c7.js rel=preload as=script>
+<link href=/js/app.62f6d6c0.js rel=preload as=script>
+<link href=/js/chunk-vendors.4d43d6c7.js rel=preload as=script>
 
 <?php include(get_template_directory()."/units/navbar.php"); ?>
         <div class="page-search-and-filter page-standard page">
@@ -17,5 +17,5 @@ Template Name: Beers
             </div>
           </div>
         </div>
-        <script src=/js/chunk-vendors.4d43d6c7.js> </script> <script src=/js/app.50bef84d.js> </script>
+        <script src=/js/chunk-vendors.4d43d6c7.js> </script> <script src=/js/app.62f6d6c0.js> </script>        
 <?php get_footer(); ?>
