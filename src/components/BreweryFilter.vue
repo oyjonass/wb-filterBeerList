@@ -43,7 +43,6 @@ export default {
   data() {
     return {
       selectedBrewery: [],
-      breweryCount: 0
     };
   },
   computed: {
@@ -76,7 +75,6 @@ export default {
         };
         array.push(obj);
       });
-      this.breweryCount = index;
       return array;
     },
     beers() {
