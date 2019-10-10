@@ -19,7 +19,7 @@
       <div class="left label">Brew</div>
 
       <div class="form-group">
-        <label for="exampleFormControlSelect2" class="sr-only">Example multiple select</label>
+        <label for="exampleFormControlSelect2" class="d-block d-sm-none">Brewery</label>
         <select v-model="selectedBrewery" multiple class="form-control" id="exampleFormControlSelect2">
           <option v-for="(brewery, index4) in getBrewerys" v-bind:value="brewery.name" :key="index4">
             {{ brewery.name }}
