@@ -40,6 +40,15 @@
                   </div>
                 </div>
               </div>
+              <div class="row" v-if="beer.untappId > 0">
+                <div class="col-12">
+                  <div class="line-bottom padding">
+                    <div class="beer-link">
+                      <a :href="'https://untappd.com/qr/beer/' + beer.untappId" taget="_blank">Open beer in UNTAPPD</a>
+                    </div>
+                  </div>
+                </div>
+              </div>
               <div class="row">
                 <div class="col-12 bottom-section">
                   <div class="row">
@@ -61,6 +70,7 @@
                   </div>
                 </div>
               </div>
+              
             </div>
           </div>
         </div>
@@ -81,4 +91,13 @@ export default {
 
 <!-- Add "scoped" attribute to limit CSS to this component only -->
 <style scoped>
+.beer-list .beer h3 a{
+  color: #212529;
+  border-bottom: none;
+}
+.beer-list .beer-link a {
+  color: #212529;
+  text-decoration: underline;
+  border-bottom: none;
+}
 </style>

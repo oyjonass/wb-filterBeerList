@@ -4,7 +4,7 @@
       <TimeFilter v-if="!storeIsLoading" />
       <TypeFilter  v-if="!storeIsLoading" />
       <RoomFilter v-if="!storeIsLoading" />
-      
+      <BreweryFilter v-if="!storeIsLoading" />
     </div>
     <BeerList v-if="!storeIsLoading" />
   </div>
@@ -14,6 +14,7 @@
 import TimeFilter from './components/TimeFilter'
 import TypeFilter from './components/TypeFilter'
 import RoomFilter from './components/RoomFilter'
+import BreweryFilter from './components/BreweryFilter'
 import BeerList from './components/BeerList'
 
 export default {
@@ -22,6 +23,7 @@ export default {
     TimeFilter,
     TypeFilter,
     RoomFilter,
+    BreweryFilter,
     BeerList
   },
   mounted() {

@@ -31,6 +31,14 @@ function filterRoom(state, beers) {
     return beers;
 }
 
+function filterBrewery(state, beers) {
+    var searchBrewery = state.searchBrewery;
+    if (searchBrewery.length > 0) {
+        beers = _.filter(beers, (v) => _.includes(searchBrewery, v.breweryName));
+    }
+    return beers;
+}
+
 export default new Vuex.Store({
     state: { // = data
         isLoading: true,
@@ -40,6 +48,7 @@ export default new Vuex.Store({
         searchBeerType: [],
         searchTime: [],
         searchRoom: [],
+        searchBrewery: [],
     },
     mutations: {
         setIsloading(state, isloading) {
@@ -62,6 +71,9 @@ export default new Vuex.Store({
         },
         setSearchRoom(state, searchRoom) {
             state.searchRoom = searchRoom;
+        },
+        setSearchBrewery(state, searchBrewery) {
+            state.searchBrewery = searchBrewery;
         },
 
     },
@@ -110,18 +122,31 @@ export default new Vuex.Store({
             let beers = state.beers;
             beers = filterTime(state, beers);
             beers = filterStyle(state, beers);
+            beers = filterBrewery(state, beers);
+
             return beers;
         },
         GetBeersForTime(state) {
             let beers = state.beers;
             beers = filterRoom(state, beers);
             beers = filterStyle(state, beers);
+            beers = filterBrewery(state, beers);
+
             return beers;
         },
         GetBeersForType(state) {
             let beers = state.beers;
             beers = filterRoom(state, beers);
             beers = filterTime(state, beers);
+            beers = filterBrewery(state, beers);
+
+            return beers;
+        },
+        GetBeersForBrewery(state) {
+            let beers = state.beers;
+            beers = filterRoom(state, beers);
+            beers = filterTime(state, beers);
+            beers = filterStyle(state, beers);
             return beers;
         },
 
@@ -133,6 +158,8 @@ export default new Vuex.Store({
             beers = filterTime(state, beers);
 
             beers = filterRoom(state, beers);
+
+            beers = filterBrewery(state, beers);
 
             // Sorting
             beers = _.sortBy(beers, 'name');
