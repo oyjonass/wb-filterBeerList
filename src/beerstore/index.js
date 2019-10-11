@@ -5,7 +5,6 @@ import axios from 'axios';
 Vue.use(Vuex);
 var _ = require('lodash');
 
-
 function filterStyle(state, beers) {
     var searchBeerType = state.searchBeerType;
     if (searchBeerType.length > 0) {
@@ -34,7 +33,13 @@ function filterRoom(state, beers) {
 function filterBrewery(state, beers) {
     var searchBrewery = state.searchBrewery;
     if (searchBrewery.length > 0) {
-        beers = _.filter(beers, (v) => _.includes(searchBrewery, v.breweryName));
+        var search = searchBrewery.toLowerCase();
+        beers = _.filter(beers, function (beer) {
+            if (beer.breweryName.length < 1) {
+                return false;
+            }
+            return beer.breweryName.toLowerCase().indexOf(search) > -1;
+        });
     }
     return beers;
 }
@@ -48,7 +53,7 @@ export default new Vuex.Store({
         searchBeerType: [],
         searchTime: [],
         searchRoom: [],
-        searchBrewery: [],
+        searchBrewery: '',
     },
     mutations: {
         setIsloading(state, isloading) {

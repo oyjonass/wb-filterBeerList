@@ -2,7 +2,7 @@ import Vue from 'vue';
 import Vuex from 'vuex';
 import VueRouter from 'vue-router';
 import App from './App.vue';
-import store from './store/index.js';
+import store from './beerstore/index.js';
 require('es6-promise').polyfill();
 
 Vue.config.productionTip = false;

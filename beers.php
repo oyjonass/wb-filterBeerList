@@ -7,7 +7,7 @@ Template Name: Beers
 ?>
 <?php get_header(); ?>
 <link href=/css/app.b9482f45.css rel=preload as=style>
-<link href=/js/app.554a7a13.js rel=preload as=script>
+<link href=/js/app.ed359e8a.js rel=preload as=script>
 <link href=/js/chunk-vendors.4d43d6c7.js rel=preload as=script>
 <link href=/css/app.b9482f45.css rel=stylesheet>
 
@@ -19,5 +19,5 @@ Template Name: Beers
             </div>
           </div>
         </div>
-        <script src=/js/chunk-vendors.4d43d6c7.js> </script> <script src=/js/app.554a7a13.js> </script>        
+        <script src=/js/chunk-vendors.4d43d6c7.js> </script> <script src=/js/app.ed359e8a.js> </script>        
 <?php get_footer(); ?>
