@@ -6,7 +6,7 @@
         <div class="form-group">
           <label for="exampleFormControlSelect2" class="d-block d-sm-none">Brewery</label>
           <select v-model="selectedBrewery" class="form-control selectpicker" id="exampleFormControlSelect2">
-            <option value="">All breweries ({{beers.length}})</option>
+            <option value="">All breweries</option>
             <option v-for="(brewery, brewindex) in getBrewerys" :key="brewindex" :value="brewery.name">{{ brewery.name }} ({{ brewery.count }})</option>
           </select>
         </div>

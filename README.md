@@ -9,7 +9,7 @@ npm install
 ```
 npm run serve
 or
-npm run serv --watch
+npm run serve --watch
 ```
 
 ### Compiles and minifies for production
