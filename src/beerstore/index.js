@@ -123,6 +123,14 @@ export default new Vuex.Store({
         },
     },
     getters: { // = computed properties
+        GetBeersMonitor(state) {
+            let beers = state.beers;
+            beers = filterRoom(state, beers);
+            beers = filterTime(state, beers);
+            beers = _.sortBy(beers, 'name');
+
+            return beers;
+        },
         GetBeersForRoom(state) {
             let beers = state.beers;
             beers = filterTime(state, beers);

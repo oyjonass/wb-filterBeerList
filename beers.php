@@ -1,23 +1,18 @@
 <?php
-
 /*
 Template Name: Beers
 */
- 
 ?>
 <?php get_header(); ?>
-<link href=/css/app.b9482f45.css rel=preload as=style>
-<link href=/js/app.7bfefa14.js rel=preload as=script>
-<link href=/js/chunk-vendors.4d43d6c7.js rel=preload as=script>
-<link href=/css/app.b9482f45.css rel=stylesheet>
+<link rel=stylesheet href=https://www.whatsbrewing.no/wp-content/themes/wb2019/css/airport.css>
+<link rel=stylesheet href=https://www.whatsbrewing.no/wp-content/themes/wb2019/css/screen-all.css>
+
+<link href=/css/app.856f2f8c.css rel=preload as=style>
+<link href=/js/app.8df12402.js rel=preload as=script>
+<link href=/js/chunk-vendors.685bae1f.js rel=preload as=script>
+<link href=/css/app.856f2f8c.css rel=stylesheet>
 
 <?php include(get_template_directory()."/units/navbar.php"); ?>
-        <div class="page-search-and-filter page-standard page">
-          <div class=container>
-            <div class=main-section>
-              <div id=app></div>
-            </div>
-          </div>
-        </div>
-        <script src=/js/chunk-vendors.4d43d6c7.js> </script> <script src=/js/app.7bfefa14.js> </script>        
+  <div id=app></div>
+  <script src=/js/chunk-vendors.685bae1f.js> </script> <script src=/js/app.8df12402.js> </script>
 <?php get_footer(); ?>
