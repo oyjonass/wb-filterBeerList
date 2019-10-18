@@ -47,8 +47,8 @@
                       {{abvChar}}&nbsp;
                   </div>
                 </div>
-                <div class="screen-col fourth status tableHeader">
-                    <div class="airportList one" v-for="(statusChar, index8) in getArrayForStatusOutput(beer.beerStatus, 6)" :item="statusChar" :key="index8">
+                <div class="screen-col fourth status tableHeader" :class="{ 'empty' : beer.beerStatus === 'EMPTY', 'canceled' : beer.beerstatus === 'CANCELED' }">
+                    <div class="airportList" v-for="(statusChar, index8) in getArrayForStatusOutput(beer.beerStatus, 6)" :item="statusChar" :key="index8">
                         {{statusChar}}&nbsp;
                     </div>
                 </div>
