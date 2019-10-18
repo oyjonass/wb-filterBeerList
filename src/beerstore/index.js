@@ -127,7 +127,7 @@ export default new Vuex.Store({
             let beers = state.beers;
             beers = filterRoom(state, beers);
             beers = filterTime(state, beers);
-            beers = _.sortBy(beers, 'name');
+            beers = _.sortBy(beers, 'breweryName');
 
             return beers;
         },

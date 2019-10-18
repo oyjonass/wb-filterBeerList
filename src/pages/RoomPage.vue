@@ -129,13 +129,13 @@ export default {
 
       }  else if(this.room === 4) {
         // 4 = Scene 1
-        this.nameLength = 21;
+        this.nameLength = 23;
         this.breweryLengt = 11;
         this.styleLength = 10;
         this.selectedRooms = ['Scene 1'];
       }  else if(this.room === 5) {
         // 4 = Scene 2
-        this.nameLength = 21;
+        this.nameLength = 23;
         this.breweryLength = 11;
         this.styleLength = 10;
         this.selectedRooms = ['Scene 2'];
@@ -154,10 +154,8 @@ export default {
       // check tap session it is
       var currentSearchTime = this.getCurrentTapSession();
       if (!_.isEqual(_.sortBy(currentSearchTime), _.sortBy(this.storeSearchTime))) {
-        console.log('new tap session');
         this.$store.commit("setSearchTime", currentSearchTime);
      }
-      console.log('loading data from json');
       this.$store.dispatch('fetchBeers');
     },
     startInterval: function () {
@@ -200,7 +198,6 @@ export default {
         return filledArray;
     },
     getCurrentTapSession() {
-      // eslint-disable-next-line
       var dateNow = new Date();
       const day = dateNow.getDate();
       const hour = dateNow.getHours()
