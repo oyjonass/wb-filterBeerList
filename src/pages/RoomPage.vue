@@ -129,19 +129,19 @@ export default {
 
       }  else if(this.room === 4) {
         // 4 = Scene 1
-        this.nameLength = 23;
+        this.nameLength = 21;
         this.breweryLengt = 11;
         this.styleLength = 10;
         this.selectedRooms = ['Scene 1'];
       }  else if(this.room === 5) {
         // 4 = Scene 2
-        this.nameLength = 23;
+        this.nameLength = 21;
         this.breweryLength = 11;
         this.styleLength = 10;
         this.selectedRooms = ['Scene 2'];
       }  else if(this.room === 6) {
         // Loftet
-        this.nameLength = 23;
+        this.nameLength = 21;
         this.breweryLength = 11;
         this.styleLength = 10;
         this.selectedRooms = ['Loftet'];
