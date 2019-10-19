@@ -47,7 +47,7 @@ export default {
         }).length;
 
         index++;
-        var text = that.getSectionName(index, count);
+        var text = that.getSectionName(sectionId, count);
 
         const obj = {
           id: sectionId,
@@ -98,13 +98,13 @@ export default {
   methods: {
     getSectionName(index, count) {
       switch (index) {
-        case 1:
+        case "440439":
           return "Fri 14-18 (" + count + ")";
-        case 2:
+        case "440440":
           return "Fri 18-22 (" + count + ")";
-        case 3:
+        case "440449":
           return "Sat 14-18 (" + count + ")";
-        case 4:
+        case "440450":
           return "Sat 18-22 (" + count + ")";
       }
     },
