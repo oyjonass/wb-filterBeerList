@@ -92,104 +92,126 @@ html,body, .ollhall34 .container{
 	overflow: hidden;
 }
 
+
 /* maskinhallen  screen-12-normal-1080.css */
 
-.maskinhallen .container {
+.maskinhallen .container{
 	width: 1080px;
 	max-width: 1080px;
 }
-
-.maskinhallen .header {
-	background-color: #F2DD06;
-	padding: 15px 0;
-	margin-bottom: 13px;
-}
-
-/* EACH LETTER BOX */
-
-.maskinhallen .airportList {
-	font-family: 'Interstate Regular Comp';
-	width: 0.8em;
-}
-
-.maskinhallen .line {
-	padding: 13px 0;
-}
-
-/* FIRST LINE */
-
-.maskinhallen .row.first {
-
-}
-
-.maskinhallen .row.first .airportList {
-	font-size: 61px;
-	width: 0.819em;
-}
-
-/* SECOND LINE */
-
-.maskinhallen .row.second {
-	margin-top: 10px;
-}
-
-.maskinhallen .row.second .airportList {
-	font-size: 39px;
-}
-
-.maskinhallen .row.second .screen-col {
-	float: left;
-	margin-right: 27px;
-}
-
-.maskinhallen .row.second .screen-col.fourth {
-	float: left;
-	margin-right: 0px;
-}
-
-html, body, .maskinhallen .container {
-	overflow: hidden;
-}
-
-
-/* SCENE 1  File screen-16-normal-1080 */
-.scene1 .container{
-	width: 1080px;
-	max-width: 1080px;
-}
-.scene1 .header{
-	background-color: #F2DD06;
-	padding:1px 0;
-	margin-bottom: 10px;
-	letter-spacing: 3px;
+.maskinhallen .header{
+background-color: #F2DD06;
+					padding:15px 0;
+					margin-bottom: 13px;
 
 }	
+.maskinhallen h1{
+	 text-transform: uppercase;
+        letter-spacing: 4px;
+}
 /* EACH LETTER BOX */
-.scene1 .airportList{
+.maskinhallen .airportList{
 	font-family:'Interstate Regular Comp';
 	width: 0.8em;
 }
+.maskinhallen .line{
+padding:13px 0;
+}
+/* FIRST LINE */
+.maskinhallen .row.first{
+	
+}
+.maskinhallen .row.first .airportList{
+font-size: 61px;
+					width: 0.819em;		
+}
+/* SECOND LINE */
+.maskinhallen .row.second{
+	margin-top: 10px;
+}
+.maskinhallen .row.second .airportList{
+	font-size: 39px;		
+}
+.maskinhallen .row.second .screen-col{
+	float: left;
+	margin-right: 27px;
+}
+.maskinhallen .row.second .screen-col.fourth{
+	float: left;
+	margin-right:0px;
+}
+
+html,body, .maskinhallen .container{
+	overflow: hidden;
+}
+
+/* ######## SCENE 1  - START  ########  */
+.scene1{
+	position: absolute;
+	background-color: #000;
+	height: 720px;
+	width: 1280px;
+	top:35px;
+	right: 0px;
+}
+.scene1 .body-inner{
+	position: absolute;
+	left: 0px;
+	
+	right: -525px;
+
+	
+}
+.scene1 .container{
+	width: 635px;
+	max-width: 635px;
+	margin-right: 588px;
+	/*background-color: green;*/
+	padding:0px;
+}
+
+.scene1 .header{
+	background-color: #F2DD06;
+	padding:0px 0;
+	margin-bottom: 2px;
+}	
+.scene1 h1{
+
+        text-transform: uppercase;
+        letter-spacing: 8px;
+        margin:0;
+        font-size: 22px;
+
+}
+.scene1 .col-sm-12{
+	
+}
+/* EACH LETTER BOX */
+.scene1 .airportList{
+	font-family:'Interstate Regular Comp';
+	width: 0.705em;
+}
 .scene1 .line{
-	padding:6px 0;
+		padding:1px 0 2px 0;
 }
 /* FIRST LINE */
 .scene1 .row.first{
 	
 }
 .scene1 .row.first .airportList{
-	font-size: 56px;
-	width: 0.814em;		
+		font-size: 39px;		
+		width: 0.7em;
 }
 /* SECOND LINE */
 .scene1 .row.second{
-	margin-top: 4px;
+	margin-top: 0px;
 }
 .scene1 .row.second .airportList{
-	font-size: 39px;		
+	font-size: 26px;			
 }
 .scene1 .row.second .screen-col{
 	float: left;
-	margin-right: 27px;
+		margin-right: 20px;
 }
 .scene1 .row.second .screen-col.fourth{
 	float: left;
@@ -198,45 +220,81 @@ html, body, .maskinhallen .container {
 html,body, .scene1 .container{
 	overflow: hidden;
 }
+/* ######## SCENE 1  - END  ########  */
 
-/* SCENE 2  File screen-16-normal-1080 */
-.scene2 .container{
-	width: 1080px;
-	max-width: 1080px;
+
+
+
+
+
+
+
+/* ######## SCENE 2  - START  ########  */
+
+.scene2{
+	position: absolute;
+	background-color: #000;
+	height: 720px;
+	width: 1280px;
+	top:0px;
+	right: 0px;
 }
+.scene2 .body-inner{
+position: absolute;
+	left: 0px;
+	
+	right: -555px;
+}
+.scene2 .container{
+	width: 760px;
+		max-width: 760px;
+		
+		padding:0px;
+		
+		margin-right: 560px;
+		
+}
+
 .scene2 .header{
 	background-color: #F2DD06;
-	padding:1px 0;
-	margin-bottom: 10px;
-	letter-spacing: 3px;
-
+		padding:0px 0;
+		margin-bottom: 2px;
 }	
-/* EACH LETTER BOX */
+.scene2 h1{
+
+       text-transform: uppercase;
+        letter-spacing: 6px;
+        margin:0;
+        font-size: 22px;
+
+}
+
 .scene2 .airportList{
 	font-family:'Interstate Regular Comp';
-	width: 0.8em;
+	width: 0.705em;
 }
 .scene2 .line{
-	padding:6px 0;
+	padding:3px 0;
 }
 /* FIRST LINE */
 .scene2 .row.first{
 	
 }
 .scene2 .row.first .airportList{
-	font-size: 56px;
-	width: 0.814em;		
+font-size: 43px;		
+		width: 0.75em;	
 }
 /* SECOND LINE */
 .scene2 .row.second{
-	margin-top: 4px;
+	margin-top: 0px;
 }
 .scene2 .row.second .airportList{
-	font-size: 39px;		
+	font-size: 32px;	
+
 }
 .scene2 .row.second .screen-col{
 	float: left;
-	margin-right: 27px;
+	margin-right: 20px;
 }
 .scene2 .row.second .screen-col.fourth{
 	float: left;
@@ -245,19 +303,23 @@ html,body, .scene1 .container{
 html,body, .scene2 .container{
 	overflow: hidden;
 }
+/* ######## SCENE 2  - END  ########  */
 
 
 
-/* Loftet  File screen-16-normal-1080 */
+
+
+
+
+/* ######## LOFTET 2  - START  ########  */
 .loftet .container{
 	width: 1080px;
 	max-width: 1080px;
 }
 .loftet .header{
-	background-color: #F2DD06;
-	padding:1px 0;
-	margin-bottom: 10px;
-	letter-spacing: 3px;
+background-color: #F2DD06;
+					padding:15px 0;
+					margin-bottom: 13px;
 
 }	
 /* EACH LETTER BOX */
@@ -266,19 +328,19 @@ html,body, .scene2 .container{
 	width: 0.8em;
 }
 .loftet .line{
-	padding:6px 0;
+padding:13px 0;
 }
 /* FIRST LINE */
 .loftet .row.first{
 	
 }
 .loftet .row.first .airportList{
-	font-size: 56px;
-	width: 0.814em;		
+font-size: 61px;
+					width: 0.819em;		
 }
 /* SECOND LINE */
 .loftet .row.second{
-	margin-top: 4px;
+	margin-top: 10px;
 }
 .loftet .row.second .airportList{
 	font-size: 39px;		

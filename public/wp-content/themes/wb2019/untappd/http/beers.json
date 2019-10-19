@@ -1333,7 +1333,7 @@
       "untappBreweryId": "2241",
       "untappdSectionId": "440439",
       "untappdLabelUrl": "https://untappd.akamaized.net/site/beer_logos/beer-1797834_235d4_sm.jpeg",
-      "beerStatus": "",
+      "beerStatus": "EMPTY",
       "room": "Maskinhallen",
       "country": "Denmark",
       "filterStyle": [
@@ -2053,7 +2053,7 @@
       "untappBreweryId": "1035",
       "untappdSectionId": "440440",
       "untappdLabelUrl": "https://untappd.akamaized.net/site/beer_logos/beer-3338756_5e81e_sm.jpeg",
-      "beerStatus": "",
+      "beerStatus": "EMPTY",
       "room": "Maskinhallen",
       "country": "United States",
       "filterStyle": [
@@ -2113,7 +2113,7 @@
       "untappBreweryId": "1035",
       "untappdSectionId": "440449",
       "untappdLabelUrl": "https://untappd.akamaized.net/site/assets/images/temp/badge-beer-default.png",
-      "beerStatus": "",
+      "beerStatus": "EMPTY",
       "room": "Maskinhallen",
       "country": "United States",
       "filterStyle": [
@@ -3295,7 +3295,7 @@
       "untappBreweryId": "58318",
       "untappdSectionId": "440449",
       "untappdLabelUrl": "https://untappd.akamaized.net/site/beer_logos/beer-1058103_db630_sm.jpeg",
-      "beerStatus": "",
+      "beerStatus": "EMPTY",
       "room": "Scene 1",
       "country": "Sweden",
       "filterStyle": [

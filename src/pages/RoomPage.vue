@@ -21,7 +21,6 @@
 			</div>
 			<div class="container main-container">
         <div v-for="(beer, index) in beers" :item="beer" :key="index">
-          
           <div class="line">
             <div class="row first">
               <div class="col-sm-12 tableHeader">
@@ -48,7 +47,12 @@
                   </div>
                 </div>
                 <div class="screen-col fourth status tableHeader" :class="{ 'empty' : beer.beerStatus === 'EMPTY', 'canceled' : beer.beerstatus === 'CANCELED' }">
-                    <div class="airportList" v-for="(statusChar, index8) in getArrayForStatusOutput(beer.beerStatus, 6)" :item="statusChar" :key="index8">
+                    <div class="airportList" 
+                        :class="{ 'one' : beer.beerstatus ===  undefined || beer.beerstatus === 'ON TAP',
+                                  'two' : beer.beerStatus === 'EMPTY',
+                                  'two' : beer.beerstatus === 'CANCELED',
+                                   }"
+                        v-for="(statusChar, index8) in getArrayForStatusOutput(beer.beerStatus, 6)" :item="statusChar" :key="index8">
                         {{statusChar}}&nbsp;
                     </div>
                 </div>
@@ -187,6 +191,9 @@ export default {
     getArrayForStatusOutput(text, maxlenth) {
         if(text.length === 0) {
           text = 'ON TAP';
+        }
+        if(text === 'EMPTY') {
+          text = 'CLOSED';
         }
         let filledArray = new Array(maxlenth);
         var beerLength = text.length > maxlenth 
